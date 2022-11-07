@@ -7,3 +7,5 @@ My odds provider was bought out, and is no longer usable. This is the last one I
 All the meat and potatoes is pretty much in /includes/functions/* and tied to /includes/config/config.php
 
 Went ham using M3O.com over the project for User DB, Betting DB, Comments, Etc. 
+
+More Uploads & Info Coming soon ~
