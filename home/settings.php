@@ -1,31 +1,3 @@
-<?php
-/*
-require 'includes/config/config.php';
-// If Session Expired
-if (isset($_SESSION['login_expires']) && ($_SESSION['login_expires'] < $unixTime)){
-    $_SESSION = array();
-    session_destroy();
-    header('Location:/login/index.php');
-}
-// If User is logged in?
-elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($_SESSION['login_expires'] > $unixTime))
-{
-    header('Location:index.php');
-} 
-// if Admin 
-/*
-elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($_SESSION['login_expires'] > $unixTime) && ($_SESSION['group_id'] === '1')) {
-
-    header('Location:/admin/index.php');
-
-}
-
-// if Guest? 
- elseif (!(isset($_SESSION['logged_in']))) {
-    header('Location:/login/index.php');
-}
-*/
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,7 +7,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>BataBoom.Bet</title>
+    <title>BataBoom.bet</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800,900" rel="stylesheet">
@@ -44,230 +16,143 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
 
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="assets/fresh/app.css">
-    <link rel="stylesheet" href="assets/fresh/mycore.css">
-    <link rel="stylesheet" href="assets/new-css/contests.css">
-    <link rel="stylesheet" href="assets/new-css/stats.css">
-
-        <!-- Customized Core CSS -->
-   
-    <style type="text/css">
-        /* brand logo is brand new */
-            .brand-logo {
-            position: relative;
-            top: -100px;
-            
-                        }
-
-        .sidebar-v1 .bottom-section ul li a {
-  color: #9afbff8c;
-}
-</style>
-
-
-    <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/ff83cd2b21.js" crossorigin="anonymous"></script>
-    <!-- Apex Charts -->
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="https://bataboom.bet/assets/stats/apex-data.js" async></script>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/core.css">
 </head>
 
-<body class="is-dark">
+
+     <body class="is-dark">
   <?php require 'sidenav.php';?>
-   
-  <!-- Container -->
-        <div id="posts-feed" class="container" data-open-sidebar data-page-title="Dashboard">
-             <div class="column features is-12">
+  <div id="posts-feed" class="container" data-open-sidebar data-page-title="Your Settings (not ready)">
+  
 
-                 <div class="dashboard-cta">
-                                            <div class="dashboard-cta-img">
-                                                <img alt="" src="https://bataboom.bet/assets/img/jordan.png" data-demo-src="https://bataboom.bet/assets/img/jordan.png">
+  
+            <div class="settings-wrapper is-full">
+                <!-- /partials/settings/sections/general-settings.html -->
+                <div id="general-settings" class="settings-section is-active">
+                    <div class="settings-panel">
+
+                        <div class="title-wrap">
+                            <a class="mobile-sidebar-trigger">
+                                <i data-feather="menu"></i>
+                            </a>
+                            <h2>General Settings</h2>
+                        </div>
+
+                        <div class="settings-form-wrapper">
+                            <div class="settings-form">
+                                <div class="columns is-multiline">
+
+                                    <div class="column is-6">
+                                        <!--Field-->
+                                        <div class="field field-group">
+                                            <label>Username</label>
+                                            <div class="control has-icon">
+                                                <input type="text" class="input is-fade" value="<?php echo $_SESSION['username'];?>">
+                                                <div class="form-icon">
+                                                    <i data-feather="user"></i>
+                                                </div>
                                             </div>
-                                            <h2 class="dashboard-cta-title">
-                                                Win awesome prizes in our contest
-                                            </h2>
-                                            <p class="dashboard-cta-text">
-                                                Predict who will win and how a match will end and get a chance to
-                                                win incredible crypto prizes.
-                                            </p>
-                                            <button class="button h-button is-light raised">Learn More</button>
                                         </div>
-                </div>
-          
-             
-                        <div class="page-content-inner apex-dashboard">
-                <div class="columns is-multiline">
-                     <div class="column is-6">
-               
-                    
-           <div class="l-card is-centered">
-            <div class="title">Bet Summary</div>
-          <?php 
-           $userSample = Stats("$uid");
-    foreach ($userSample as $key => $value){
-      echo '<p class="is-centered"><b>'.$key.'</b>: '.$value."<br></p>";
-   //   echo "<br>";
-    }
-   
-
-     ?>
-</div>
-</div>
-<div class="column is-6">
-    
- <div class="dashboard-card">
-                                           
-                                            <h2 class="dashboard-card-title">
-                                                Win awesome prizes in our contest
-                                            </h2>
-                                            <p class="dashboard-card-text">
-                                                Predict who will win and how a match will end and get a chance to
-                                                win incredible cash prizes.
-                                            </p>
-                                            <button class="button h-button is-light raised">Learn More</button>
+                                        <!--Field-->
+                                        <div class="field field-group">
+                                            <label>Email</label>
+                                            <div class="control has-icon">
+                                                <input type="text" class="input is-fade" value="<?php echo $_SESSION['email'];?>">
+                                                <div class="form-icon">
+                                                    <i data-feather="mail"></i>
+                                                </div>
+                                            </div>
                                         </div>
- </div>
+                                    </div>
 
+                                    <div class="column is-6">
+                                        <!--Field-->
+                                        <div class="field field-group">
+                                            <label>Last Name</label>
+                                            <div class="control has-icon">
+                                                <input type="text" class="input is-fade" value="<?php echo $_SESSION['username'];?>">
+                                                <div class="form-icon">
+                                                    <i data-feather="user"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Field-->
+                                        <div class="field field-group">
+                                            <label>Backup Email</label>
+                                            <div class="control has-icon">
+                                                <input type="text" class="input is-fade">
+                                                <div class="form-icon">
+                                                    <i data-feather="mail"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-<div class="column is-12">
-<div class="is-size-2 is-capitalized has-text-warning has-text-centered">
-                  <p class="has-text-white-ter">  Your Betting Statistics</p>
-                </div>
-                </div>
+                                    <div class="column is-12">
+                                        <!--Field-->
+                                        <div class="field field-group">
+                                            <label>Withdrawl Address</label>
+                                            <div class="control">
+                                                <textarea type="text" class="textarea is-fade" rows="1" placeholder="Fill in your address..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                    <div class="column is-6">
-                          
-                        <div class="s-card">
-                            <div id="apex-chart-1"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-2"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-4"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-5"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-6"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-7"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-8"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-9"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-10"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-11"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-12"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-13"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-14"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-15"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-16"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-17"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-18"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-19"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-20"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-21"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-22"></div>
-                        </div>
-                    </div>
-                    <div class="column is-6">
-                        <div class="s-card">
-                            <div id="apex-chart-23"></div>
-                        </div>
-                    </div>
-                </div>
+                                    <div class="column is-12">
+                                        <!--Field-->
+                                        <div class="form-text">
+                                            <p>Be sure to ensure the address matches the crypto you select</p>
+                                        </div>
+                                    </div>
 
-            </div>
-    
-  <div class="page-placeholder">
-               
-                <div class="placeholder-content">
-                  
-            </div></div>
+                                    <div class="column is-6">
+                                        <!--Field-->
+                                        <div class="field field-group">
+                                            <label>Favorite Team</label>
+                                            <div class="control has-icon">
+                                                <input type="text" class="input is-fade" value="Los Angeles Dodgers">
+                                                <div class="form-icon">
+                                                    <i data-feather="map-pin"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                    <div class="column is-6">
+                                        <!--Field-->
+                                        <div class="field field-group is-autocomplete">
+                                            <label>Your Rank</label>
+                                            <div class="control has-icon">
+                                                <input id="country-autocpl" type="text" class="input is-fade is-disabled" value="Undrafted Free Agent">
+                                                <div class="form-icon">
+                                                    <i data-feather="globe"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-            <div class="page-placeholder">
-                <div class="placeholder-content">
-                    <img class="light-image" src="https://bataboom.bet/assets/img/illustrations/placeholders/1.svg" alt="" />
-                    <img class="dark-image" src="https://bataboom.bet/assets/img/illustrations/placeholders/1.svg" alt="" />
-                    <h3>You don't have any friends yet.</h3>
-                    <p class="is-large">Too bad. Looks like you didn't make friends yet. But don't fret that
-                        should start anytime soon.</p>
+                                    <div class="column is-12">
+                                        <div class="buttons">
+                                            <button class="button is-solid accent-button form-button">Save Changes</button>
+                                            <button class="button is-light form-button">Advanced</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="illustration">
+                                <img class="light-image" src="assets/img/illustrations/settings/1.svg" alt="">
+                                <img class="dark-image" src="assets/img/illustrations/settings/1-dark.svg" alt="">
+                                <p>If you'd like to learn more about general settings, you can read about it in the <a>user guide</a>.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
+
     </div>
 
     <div class="chat-wrapper">
@@ -278,7 +163,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                 <div class="nav-start">
                     <div class="recipient-block">
                         <div class="avatar-container">
-                            <img class="user-avatar" src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/dan.jpg" alt="">
+                            <img class="user-avatar" src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/dan.jpg" alt="">
                         </div>
                         <div class="username">
                             <span>Dan Walker</span>
@@ -439,64 +324,64 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
             <div id="chat-sidebar" class="users-sidebar">
                 <!-- Header -->
                 <div class="header-item">
-                    <img class="light-image" src="https://bataboom.bet/assets/img/logo/friendkit-bold.svg" alt="">
-                    <img class="dark-image" src="https://bataboom.bet/assets/img/logo/friendkit-white.svg" alt="">
+                    <img class="light-image" src="assets/img/logo/friendkit-bold.svg" alt="">
+                    <img class="dark-image" src="assets/img/logo/friendkit-white.svg" alt="">
                 </div>
                 <!-- User list -->
                 <div class="conversations-list has-slimscroll-xs">
                     <!-- User -->
                     <div class="user-item is-active" data-chat-user="dan" data-full-name="Dan Walker" data-status="Online">
                         <div class="avatar-container">
-                            <img class="user-avatar" src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/dan.jpg" alt="">
+                            <img class="user-avatar" src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/dan.jpg" alt="">
                             <div class="user-status is-online"></div>
                         </div>
                     </div>
                     <!-- User -->
                     <div class="user-item" data-chat-user="stella" data-full-name="Stella Bergmann" data-status="Busy">
                         <div class="avatar-container">
-                            <img class="user-avatar" src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/stella.jpg" alt="">
+                            <img class="user-avatar" src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/stella.jpg" alt="">
                             <div class="user-status is-busy"></div>
                         </div>
                     </div>
                     <!-- User -->
                     <div class="user-item" data-chat-user="daniel" data-full-name="Daniel Wellington" data-status="Away">
                         <div class="avatar-container">
-                            <img class="user-avatar" src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/daniel.jpg" alt="">
+                            <img class="user-avatar" src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/daniel.jpg" alt="">
                             <div class="user-status is-away"></div>
                         </div>
                     </div>
                     <!-- User -->
                     <div class="user-item" data-chat-user="david" data-full-name="David Kim" data-status="Busy">
                         <div class="avatar-container">
-                            <img class="user-avatar" src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/david.jpg" alt="">
+                            <img class="user-avatar" src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/david.jpg" alt="">
                             <div class="user-status is-busy"></div>
                         </div>
                     </div>
                     <!-- User -->
                     <div class="user-item" data-chat-user="edward" data-full-name="Edward Mayers" data-status="Online">
                         <div class="avatar-container">
-                            <img class="user-avatar" src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/edward.jpeg" alt="">
+                            <img class="user-avatar" src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/edward.jpeg" alt="">
                             <div class="user-status is-online"></div>
                         </div>
                     </div>
                     <!-- User -->
                     <div class="user-item" data-chat-user="elise" data-full-name="Elise Walker" data-status="Away">
                         <div class="avatar-container">
-                            <img class="user-avatar" src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/elise.jpg" alt="">
+                            <img class="user-avatar" src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/elise.jpg" alt="">
                             <div class="user-status is-away"></div>
                         </div>
                     </div>
                     <!-- User -->
                     <div class="user-item" data-chat-user="nelly" data-full-name="Nelly Schwartz" data-status="Busy">
                         <div class="avatar-container">
-                            <img class="user-avatar" src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/nelly.png" alt="">
+                            <img class="user-avatar" src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/nelly.png" alt="">
                             <div class="user-status is-busy"></div>
                         </div>
                     </div>
                     <!-- User -->
                     <div class="user-item" data-chat-user="milly" data-full-name="Milly Augustine" data-status="Busy">
                         <div class="avatar-container">
-                            <img class="user-avatar" src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/milly.jpg" alt="">
+                            <img class="user-avatar" src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/milly.jpg" alt="">
                             <div class="user-status is-busy"></div>
                         </div>
                     </div>
@@ -517,7 +402,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/dan.jpg" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/dan.jpg" alt="">
                         <div class="message-block">
                             <span>8:03am</span>
                             <div class="message-text">Hi Jenna! I made a new design, and i wanted to show it to you.</div>
@@ -525,7 +410,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/dan.jpg" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/dan.jpg" alt="">
                         <div class="message-block">
                             <span>8:03am</span>
                             <div class="message-text">It's quite clean and it's inspired from Bulkit.</div>
@@ -533,7 +418,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>8:12am</span>
                             <div class="message-text">Oh really??! I want to see that.</div>
@@ -541,7 +426,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/dan.jpg" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/dan.jpg" alt="">
                         <div class="message-block">
                             <span>8:13am</span>
                             <div class="message-text">FYI it was done in less than a day.</div>
@@ -549,7 +434,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>8:17am</span>
                             <div class="message-text">Great to hear it. Just send me the PSD files so i can have a look at it.</div>
@@ -557,7 +442,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>8:18am</span>
                             <div class="message-text">And if you have a prototype, you can also send me the link to it.</div>
@@ -572,7 +457,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>10:34am</span>
                             <div class="message-text">Hey Stella! Aren't we supposed to go the theatre after work?.</div>
@@ -580,7 +465,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>10:37am</span>
                             <div class="message-text">Just remembered it.</div>
@@ -588,7 +473,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/stella.jpg" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/stella.jpg" alt="">
                         <div class="message-block">
                             <span>11:22am</span>
                             <div class="message-text">Yeah you always do that, forget about everything.</div>
@@ -603,7 +488,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>3:24pm</span>
                             <div class="message-text">Daniel, Amanda told me about your issue, how can I help?</div>
@@ -611,7 +496,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/daniel.jpg" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/daniel.jpg" alt="">
                         <div class="message-block">
                             <span>3:42pm</span>
                             <div class="message-text">Hey Jenna, thanks for answering so quickly. Iam stuck, i need a car.</div>
@@ -619,7 +504,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/daniel.jpg" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/daniel.jpg" alt="">
                         <div class="message-block">
                             <span>3:43pm</span>
                             <div class="message-text">Can i borrow your car for a quick ride to San Fransisco? Iam running behind and
@@ -635,7 +520,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>12:34pm</span>
                             <div class="message-text">Damn you! Why would you even implement this in the game?.</div>
@@ -643,7 +528,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>12:32pm</span>
                             <div class="message-text">I just HATE aliens.</div>
@@ -651,7 +536,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/david.jpg" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/david.jpg" alt="">
                         <div class="message-block">
                             <span>13:09pm</span>
                             <div class="message-text">C'mon, you just gotta learn the tricks. You can't expect aliens to behave like
@@ -659,7 +544,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                         </div>
                     </div>
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/david.jpg" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/david.jpg" alt="">
                         <div class="message-block">
                             <span>13:11pm</span>
                             <div class="message-text">I checked the replay and for example, you always get supply blocked. That's not
@@ -667,14 +552,14 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                         </div>
                     </div>
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>13:12pm</span>
                             <div class="message-text">I know but i struggle when i have to decide what to make from larvas.</div>
                         </div>
                     </div>
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/david.jpg" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/david.jpg" alt="">
                         <div class="message-block">
                             <span>13:17pm</span>
                             <div class="message-text">Join me in game, i'll show you.</div>
@@ -689,7 +574,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/edward.jpeg" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/edward.jpeg" alt="">
                         <div class="message-block">
                             <span>4:55pm</span>
                             <div class="message-text">Hey Jenna, what's up?</div>
@@ -697,7 +582,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/edward.jpeg" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/edward.jpeg" alt="">
                         <div class="message-block">
                             <span>4:56pm</span>
                             <div class="message-text">Iam coming to LA tomorrow. Interested in having lunch?</div>
@@ -705,7 +590,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>5:21pm</span>
                             <div class="message-text">Hey mate, it's been a while. Sure I would love to.</div>
@@ -713,7 +598,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/edward.jpeg" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/edward.jpeg" alt="">
                         <div class="message-block">
                             <span>5:27pm</span>
                             <div class="message-text">Ok. Let's say i pick you up at 12:30 at work, works?</div>
@@ -721,7 +606,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>5:43pm</span>
                             <div class="message-text">Yup, that works great.</div>
@@ -729,7 +614,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>5:44pm</span>
                             <div class="message-text">And yeah, don't forget to bring some of my favourite cheese cake.</div>
@@ -737,7 +622,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/edward.jpeg" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/edward.jpeg" alt="">
                         <div class="message-block">
                             <span>5:27pm</span>
                             <div class="message-text">No worries</div>
@@ -752,7 +637,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>11:53am</span>
                             <div class="message-text">Elise, i forgot my folder at your place yesterday.</div>
@@ -760,7 +645,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>11:53am</span>
                             <div class="message-text">I need it badly, it's work stuff.</div>
@@ -768,7 +653,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/elise.jpg" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/elise.jpg" alt="">
                         <div class="message-block">
                             <span>12:19pm</span>
                             <div class="message-text">Yeah i noticed. I'll drop it in half an hour at your office.</div>
@@ -783,7 +668,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>8:22pm</span>
                             <div class="message-text">So you watched the movie?</div>
@@ -791,7 +676,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>8:22pm</span>
                             <div class="message-text">Was it scary?</div>
@@ -799,7 +684,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/nelly.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/nelly.png" alt="">
                         <div class="message-block">
                             <span>9:03pm</span>
                             <div class="message-text">It was so frightening, i felt my heart was about to blow inside my chest.</div>
@@ -814,7 +699,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/milly.jpg" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/milly.jpg" alt="">
                         <div class="message-block">
                             <span>2:01pm</span>
                             <div class="message-text">Hello Jenna, did you read my proposal?</div>
@@ -822,7 +707,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/milly.jpg" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/milly.jpg" alt="">
                         <div class="message-block">
                             <span>2:01pm</span>
                             <div class="message-text">Didn't hear from you since i sent it.</div>
@@ -830,7 +715,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>2:02pm</span>
                             <div class="message-text">Hello Milly, Iam really sorry, Iam so busy recently, but i had the time to read
@@ -839,7 +724,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/milly.jpg" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/milly.jpg" alt="">
                         <div class="message-block">
                             <span>2:04pm</span>
                             <div class="message-text">And what did you think about it?</div>
@@ -847,7 +732,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>2:05pm</span>
                             <div class="message-text">Actually it's quite good, there might be some small changes but overall it's
@@ -856,7 +741,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-sent">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>2:07pm</span>
                             <div class="message-text">I think that i can give it to my boss at this stage.</div>
@@ -864,7 +749,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                     </div>
 
                     <div class="chat-message is-received">
-                        <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/milly.jpg" alt="">
+                        <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/milly.jpg" alt="">
                         <div class="message-block">
                             <span>2:09pm</span>
                             <div class="message-text">Crossing fingers then</div>
@@ -1006,7 +891,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                             </div>
 
                             <div class="details-avatar">
-                                <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/dan.jpg" alt="">
+                                <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/dan.jpg" alt="">
                                 <div class="call-me">
                                     <i class="mdi mdi-phone"></i>
                                 </div>
@@ -1125,7 +1010,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                             </div>
 
                             <div class="details-avatar">
-                                <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/stella.jpg" alt="">
+                                <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/stella.jpg" alt="">
                                 <div class="call-me">
                                     <i class="mdi mdi-phone"></i>
                                 </div>
@@ -1239,7 +1124,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                             </div>
 
                             <div class="details-avatar">
-                                <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/daniel.jpg" alt="">
+                                <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/daniel.jpg" alt="">
                                 <div class="call-me">
                                     <i class="mdi mdi-phone"></i>
                                 </div>
@@ -1358,7 +1243,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                             </div>
 
                             <div class="details-avatar">
-                                <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/david.jpg" alt="">
+                                <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/david.jpg" alt="">
                                 <div class="call-me">
                                     <i class="mdi mdi-phone"></i>
                                 </div>
@@ -1477,7 +1362,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                             </div>
 
                             <div class="details-avatar">
-                                <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/edward.jpeg" alt="">
+                                <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/edward.jpeg" alt="">
                                 <div class="call-me">
                                     <i class="mdi mdi-phone"></i>
                                 </div>
@@ -1591,7 +1476,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                             </div>
 
                             <div class="details-avatar">
-                                <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/elise.jpg" alt="">
+                                <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/elise.jpg" alt="">
                                 <div class="call-me">
                                     <i class="mdi mdi-phone"></i>
                                 </div>
@@ -1700,7 +1585,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                             </div>
 
                             <div class="details-avatar">
-                                <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/nelly.png" alt="">
+                                <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/nelly.png" alt="">
                                 <div class="call-me">
                                     <i class="mdi mdi-phone"></i>
                                 </div>
@@ -1819,7 +1704,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                             </div>
 
                             <div class="details-avatar">
-                                <img src="https://via.placeholder.com/300x300" data-demo-src="https://bataboom.bet/assets/img/avatars/milly.jpg" alt="">
+                                <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/milly.jpg" alt="">
                                 <div class="call-me">
                                     <i class="mdi mdi-phone"></i>
                                 </div>
@@ -1894,7 +1779,7 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
                 </div>
                 <div class="card-body">
 
-                    <img src="https://bataboom.bet/assets/img/icons/chat/bubbles.svg" alt="">
+                    <img src="assets/img/icons/chat/bubbles.svg" alt="">
 
                     <div class="field is-autocomplete">
                         <div class="control has-icon">
@@ -1916,11 +1801,67 @@ elseif (isset($_SESSION['logged_in']) && ($_SESSION['logged_in'] === TRUE) && ($
             </div>
         </div>
     </div>
-  
- 
-    <!-- Apex Charts -->
-    <script src="https://bataboom.bet/assets/stats/apex.js"></script>
+    <!--Load Mapbox-->
 
+    <!-- Concatenated js plugins and jQuery -->
+    <script src="assets/js/app.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="assets/data/tipuedrop_content.js"></script>
+
+    <!-- Core js -->
+    <script src="assets/js/global.js"></script>
+
+    <!-- Navigation options js -->
+    <script src="assets/js/navbar-v1.js"></script>
+    <script src="assets/js/navbar-v2.js"></script>
+    <script src="assets/js/navbar-mobile.js"></script>
+    <script src="assets/js/navbar-options.js"></script>
+    <script src="assets/js/sidebar-v1.js"></script>
+
+    <!-- Core instance js -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/chat.js"></script>
+    <script src="assets/js/touch.js"></script>
+    <script src="assets/js/tour.js"></script>
+
+    <!-- Components js -->
+    <script src="assets/js/explorer.js"></script>
+    <script src="assets/js/widgets.js"></script>
+    <script src="assets/js/modal-uploader.js"></script>
+    <script src="assets/js/popovers-users.js"></script>
+    <script src="assets/js/popovers-pages.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+
+    <!-- Landing page js -->
+
+    <!-- Signup page js -->
+
+    <!-- Feed pages js -->
+
+    <!-- profile js -->
+
+    <!-- stories js -->
+
+    <!-- friends js -->
+
+    <!-- questions js -->
+
+    <!-- video js -->
+
+    <!-- events js -->
+
+    <!-- news js -->
+
+    <!-- shop js -->
+
+    <!-- inbox js -->
+
+    <!-- settings js -->
+    <script src="assets/js/settings.js"></script>
+
+    <!-- map page js -->
+
+    <!-- elements page js -->
 </body>
 
 </html>
