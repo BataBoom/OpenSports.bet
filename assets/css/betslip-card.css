@@ -1,0 +1,245 @@
+/* The Card itself */
+.OSB-card-10 {
+  background: #22c1c3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #fdbb2d,
+    #22c1c3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #fdbb2d,
+    #22c1c3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+
+  width: auto;
+  height: auto;
+  margin: 10px auto;
+  color: #eee;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* PFP Images */
+.OSB-card-10 .pfp {
+  margin: 10px auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  box-shadow: 0px 0px 0px 2px #64c17b;
+  transition: all 0.25s linear;
+}
+
+.OSB-card-10:hover img {
+  transform: scale(1.1);
+}
+
+/* OSB List */
+.OSB-card-10 .OSB-name {
+  line-height: auto;
+  margin: auto;
+}
+.OSB-card-10 .OSB-summary {
+  background-image: linear-gradient(
+    5deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  backdrop-filter: blur(20px);
+  opacity: 0.8;
+  border: 5px groove;
+  border-radius: 55px;
+  border-color: rgb(55, 55, 255, 0.8);
+  border-style: inset;
+  width: 90%;
+}
+
+.OSB-card-10 .OSB-record {
+  margin-top: 10px;
+  background-color: rgb(255, 255, 200, 0.155);
+  backdrop-filter: blur(0px);
+  border: 5px groove;
+  border-radius: 25px;
+  border-color: rgb(244, 227, 118, 0.8);
+  border-style: inset;
+  width: 80%;
+  line-height: 5px;
+}
+
+#proftext {
+  font-size: 2em;
+  font-family: "Londrina Solid", cursive;
+  font-weight: 400;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(236, 127, 24, 0.9);
+  text-decoration-style: wavy;
+  text-decoration-thickness: auto;
+  letter-spacing: 5px;
+  padding-bottom: 10px;
+}
+#proftext2 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Fredoka", sans-serif;
+  letter-spacing: 2px;
+  line-height: 25px;
+  padding: 10px;
+  color: white;
+}
+#proftext3 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Fredoka", sans-serif;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: rgb(15, 97, 179, 1);
+  padding-top: 5px;
+  font-family: "Teko", sans-serif;
+  text-transform: uppercase;
+}
+/* Betslip */
+.betslip {
+  cursor: pointer;
+  font-size: 28px;
+  padding: 20px;
+  font-color: white;
+  font-size: 36px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 2rem 0 rgb(205, 43, 238, 0.55);
+  border-radius: 5px;
+  margin: 50px;
+  width: 90%;
+}
+
+.betslip img {
+}
+
+.basketball {
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: orange;
+  background: none;
+  margin: 35px;
+}
+.basketball:hover fa {
+  transform: scale(1.1);
+  color: red;
+  margin: 35px;
+}
+.basketball:hover {
+  background: none;
+  border: none;
+  color: red;
+  margin: 35px;
+}
+
+#bet-money {
+  font-size: 28px;
+  font-family: "Bangers", cursive;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(221, 250, 194, 0.8);
+  text-decoration-style: wavy;
+  text-decoration-thickness: auto;
+  text-shadow: 2px 0px 5px lightgreen;
+}
+
+#bet-pick {
+  font-size: 24px;
+  font-family: "Teko", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 2px 0px 5px red;
+}
+
+#bet-time {
+  font-size: 16px;
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  font-style: bold;
+  letter-spacing: 2px;
+  color: black;
+  text-shadow: 2px 0px 5px blue;
+  margin-bottom: 10px;
+}
+
+/* buttons */
+.OSB-card-10 .OSB-icons .fa {
+  color: #ffc75e;
+  margin: 10px;
+}
+
+.OSB-card-10:hover img {
+  transform: scale(1.1);
+}
+
+button {
+  color: #1d9af2;
+  background-color: #292d3e;
+  border: 1px solid #1d9af2;
+  border-radius: 4px;
+  padding: 0 15px;
+  cursor: pointer;
+  height: 172px;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  transform: rotateZ(-30deg);
+}
+
+.comments {
+  background-color: rgba(0, 105, 205, 0.2);
+  backdrop-filter: blur(0px);
+  border: 5px solid;
+  border-radius: 15px;
+  border-color: rgb(124, 11, 142, 0.4);
+  border-style: ridge;
+  padding-right: 50px;
+
+  padding: 40px 20px 40px 20px;
+}
+
+.chars {
+  font-size: 18px;
+  font-family: "Unica One", cursive;
+  color: white;
+}
+
+#commenter {
+  width: 72px;
+  height: 72px;
+  border: 5px solid;
+  border-radius: 15px;
+  border-color: rgb(97, 16, 203, 0.4);
+  border-style: groove;
+}
+
+.submit-shrink {
+  color: white;
+  background-color: transparent;
+  border: 3px solid rgb(247, 247, 151, 0.6);
+  border-radius: 4px;
+  padding: 0 15px;
+  cursor: pointer;
+  height: 50px;
+  width: 120px;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.7em;
+  font-family: "Bangers", cursive;
+  letter-spacing: 2px;
+}
+
+.submit-shrink:hover {
+  transform: scale(0.8);
+}
+[class*="form"] {
+  display: none;
+}
