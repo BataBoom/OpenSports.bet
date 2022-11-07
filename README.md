@@ -1,4 +1,4 @@
-# OpenSports.bet
+# OpenSports.bet & BataBoom.bet
 
 Old Project but figure I upload it. Learned a lot over the course of making this. Most importantly, design is important. UID's for everything.
 
