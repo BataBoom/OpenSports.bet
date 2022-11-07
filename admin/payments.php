@@ -10,33 +10,23 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <!-- Bulma Version 0.9.0-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/admin.css">
-     <link rel="stylesheet" href="https://raw.githubusercontent.com/Wikiki/bulma-pageloader/master/src/sass/index.sass">
-    <style type="text/css">
-        #tab-content p {
-  display: none;
-}
+    <link rel="stylesheet" type="text/css" href="css/admin.css">
+    <link rel="stylesheet" type="text/css" href="bulma/node_modules/bulma-quickview-master/dist/css/bulma-quickview.min.css">
 
-#tab-content p.is-active {
-  display: block;
-}
-    </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     
 </head>
 
 <body>
-<?php // require_once 'includes/sidenav.php'; ?>
 <?php require_once 'includes/admin_config.php'; ?>
-<div class="pageloader"><span class="title">Pageloader</span></div>
-<div class="column is-9">
+<div class="column is-12">
                 <section class="hero is-info welcome is-small">
                     <div class="hero-body">
                         <div class="container">
                             <h1 class="title">
-                                Hello, Admin.
+                                Hello, BataBoom.
                             </h1>
                             <h2 class="subtitle">
-                              Look into Google Charts
+                                I hope you are having a great day!
                             </h2>
                         </div>
                     </div>
@@ -69,117 +59,9 @@
                         </div>
                     </div>
                 </section>
-                 <div class="column is-10">
-                    <div class="tabs is-toggle is-fullwidth" id="tabs">
-  <ul>
-    <li class="is-active" data-tab="1">
-      <a>
-        <span class="icon is-small"><i class="fa fa-image"></i></span>
-        <span>Pictures</span>
-      </a>
-    </li>
-    <li data-tab="2">
-      <a>
-        <span class="icon is-small"><i class="fa fa-music"></i></span>
-        <span>Music</span>
-      </a>
-    </li>
-    <li data-tab="3">
-      <a>
-        <span class="icon is-small"><i class="fa fa-film"></i></span>
-        <span>Videos</span>
-      </a>
-    </li>
-    <li data-tab="4">
-      <a>
-        <span class="icon is-small"><i class="fa fa-file-text-o"></i></span>
-        <span>Documents</span>
-      </a>
-    </li>
-  </ul>
-</div>
-<div id="tab-content">
-  <p class="is-active" data-content="1">
-    Pictures
-  </p>
-  <p data-content="2">
-    Music
-  </p>
-  <p data-content="3">
-    Videos
-  </p>
-  <p data-content="4">
-    Documents
-  </p>
-</div>
-<div class="is-divider" data-content="OR"></div>
-                <article class="panel is-info">
-  <p class="panel-heading">
-    Info
-  </p>
-  <p class="panel-tabs">
-    <a class="is-active">All</a>
-    <a>Public</a>
-    <a>Private</a>
-    <a>Sources</a>
-    <a> <p data-content="4">
-    Documents
-  </p></a>
-  </p>
-  <div class="panel-block">
-    <p class="control has-icons-left">
-      <input class="input is-info" type="text" placeholder="Search">
-      <span class="icon is-left">
-        <i class="fas fa-search" aria-hidden="true"></i>
-      </span>
-    </p>
-  </div>
-  <a class="panel-block is-active">
-    <span class="panel-icon">
-      <i class="fas fa-book" aria-hidden="true"></i>
-    </span>
-    bulma
-  </a>
-  <a class="panel-block">
-    <span class="panel-icon">
-      <i class="fas fa-book" aria-hidden="true"></i>
-    </span>
-    marksheet
-  </a>
-  <a class="panel-block">
-    <span class="panel-icon">
-      <i class="fas fa-book" aria-hidden="true"></i>
-    </span>
-    minireset.css
-  </a>
-  <a class="panel-block">
-    <span class="panel-icon">
-      <i class="fas fa-book" aria-hidden="true"></i>
-    </span>
-    jgthms.github.io
-  </a>
-</article>
-</div>
-<div class="is-divider" data-content="OR"></div>
-                    <div class="column is-10">
-                    <section class="info-finances">
-                    <h6 class="title is-6">Finance Overivew</h6>
-                       <h4 class="subtitle is-4">Revenue Statistics</h4>
-                        <label>Value of Paid Bets</label>
-                         <div class="control">
-    <div class="tags has-addons">
-      <span class="tag is-dark">build</span>
-      <span class="tag is-success">passing</span>
-    </div>
-  </div>
-                        <progress class="progress is-medium is-warning" value="15" max="60"><span>2,000</span></progress>
-                        <label>Value of Bookie Wins</label>
-                        <progress class="progress is-medium is-primary" value="35" max="60"><span>4,200</span></progress>
-                        </section>
-                    </div>
-<div class="columns">
-                    <div class="column is-6">
-                        <div class="card events-card">
+
+                    <div class="column">
+<div class="card events-card">
                             <header class="card-header">
                                 <p class="card-header-title">
                                     Events
@@ -254,9 +136,57 @@
                             <footer class="card-footer">
                                 <a href="#" class="card-footer-item">View All</a>
                             </footer>
-                        </div>
-                    </div>
-                    <div class="column is-6">
+                        </div>  </div>
+                        <div class="column">
+                            <div id="quickviewDefault" class="quickview">
+  <header class="quickview-header">
+    <p class="title">Quickview title</p>
+    <span class="delete" data-dismiss="quickview"></span>
+  </header>
+
+  <div class="quickview-body">
+     <?php 
+    $bytes = random_bytes(6);
+    $gg = bin2hex($bytes);
+
+
+echo $gg;
+?>
+    <div class="quickview-block">
+      ...
+    </div>
+  </div>
+
+  <footer class="quickview-footer">
+
+  </footer>
+
+</div>
+<button class="button is-primary" data-show="quickview" data-target="quickviewDefault">Show quickview</button>
+<script type="text/javascript" src="https://opensports.bet/admin/bulma/node_modules/bulma-quickview-master/dist/js/bulma-quickview.js"></script>
+<script type="text/javascript">
+bulmaQuickview.attach();
+</script>
+</div>
+                    
+                       <div class="column is-12">
+               <?php
+    $readInvoices = readInvoicess();
+    $end = count($readInvoices);
+
+    ?>
+                   
+
+                    <section class="info-finances">
+                         <h1 class="title">Finance Statistics</h1>
+                        <label>Value of Paid Bets</label>
+                         <div class="control">
+                        <progress class="progress is-medium is-warning" value="15" max="60"><span>2,000</span></progress>
+                        <label>Value of Bookie Wins</label>
+                        <progress class="progress is-medium is-primary" value="35" max="60"><span>4,200</span></progress>
+                        </div></section></div>
+
+                    <div class="column is-12">
                         <div class="card">
                             <header class="card-header">
                                 <p class="card-header-title">
@@ -281,27 +211,77 @@
                                     </div>
                                 </div>
                             </div>
+               <div class="column is-12">
+                
+                    <h1 class="subtitle"><?php echo $end;?> Recent Invoices</h1>
+                    <div class="table-container">
+   <table class="table is-fullwidth is-striped">
+   <thead>
+    <tr>
+      <th scope="col">Invoice#</th>
+      <th scope="col">Username</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Expires (EST)</th>
+      <th scope="col">Status</th>
+
+    </tr>
+  </thead>
+  <tbody>
+     <?php for ($i = 0; $i < $end; ++$i){ ?>
+    <tr>
+   <?php echo "<td>".$readInvoices[$i]['id']."</td>";?>
+      <?php echo "<td>".$readInvoices[$i]['username']."</td>";?>
+    <?php echo "<td>".$readInvoices[$i]['amount']."</td>";?>
+     <?php echo "<td>".$readInvoices[$i]['expires']."</td>";?>
+    <?php echo "<td>".$readInvoices[$i]['status']."</td>";?>
+    <?php echo "<td><a href=" . "edit_payment.php?id=$readInvoices[$i]['id']" . "><ion-icon name='create-outline'></ion-icon>
+</span></a></td>";?>
+    </tr>
+   
+  <?php };?>
+  </tbody>
+</table>
+
+</div>
+                        
+<div class="column">
+<nav class="pagination" role="navigation" aria-label="pagination">
+  <a class="pagination-previous is-disabled" title="This is the first page">Previous</a>
+  <a class="pagination-next">Next page</a>
+  <ul class="pagination-list">
+    <li>
+      <a class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a>
+    </li>
+    <li>
+      <a class="pagination-link" aria-label="Goto page 2">2</a>
+    </li>
+    <li>
+      <a class="pagination-link" aria-label="Goto page 3">3</a>
+    </li>
+     <li>
+      <a class="pagination-link" aria-label="Goto page 4">4</a>
+    </li>
+     <li>
+      <a class="pagination-link" aria-label="Goto page 5">5</a>
+    </li>
+  </ul>
+</nav>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        $(document).ready(function() {
-  $('#tabs li').on('click', function() {
-    var tab = $(this).data('tab');
 
-    $('#tabs li').removeClass('is-active');
-    $(this).addClass('is-active');
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    $('#tab-content p').removeClass('is-active');
-    $('p[data-content="' + tab + '"]').addClass('is-active');
-  });
-});
-</script>
-    <script async type="text/javascript" src="../js/bulma.js"></script>
 </body>
 
 </html>

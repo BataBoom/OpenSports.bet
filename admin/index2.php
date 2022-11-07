@@ -11,23 +11,11 @@
     <!-- Bulma Version 0.9.0-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="../css/admin.css">
-     <link rel="stylesheet" href="https://raw.githubusercontent.com/Wikiki/bulma-pageloader/master/src/sass/index.sass">
-    <style type="text/css">
-        #tab-content p {
-  display: none;
-}
-
-#tab-content p.is-active {
-  display: block;
-}
-    </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
 <?php // require_once 'includes/sidenav.php'; ?>
 <?php require_once 'includes/admin_config.php'; ?>
-<div class="pageloader"><span class="title">Pageloader</span></div>
 <div class="column is-9">
                 <section class="hero is-info welcome is-small">
                     <div class="hero-body">
@@ -70,49 +58,6 @@
                     </div>
                 </section>
                  <div class="column is-10">
-                    <div class="tabs is-toggle is-fullwidth" id="tabs">
-  <ul>
-    <li class="is-active" data-tab="1">
-      <a>
-        <span class="icon is-small"><i class="fa fa-image"></i></span>
-        <span>Pictures</span>
-      </a>
-    </li>
-    <li data-tab="2">
-      <a>
-        <span class="icon is-small"><i class="fa fa-music"></i></span>
-        <span>Music</span>
-      </a>
-    </li>
-    <li data-tab="3">
-      <a>
-        <span class="icon is-small"><i class="fa fa-film"></i></span>
-        <span>Videos</span>
-      </a>
-    </li>
-    <li data-tab="4">
-      <a>
-        <span class="icon is-small"><i class="fa fa-file-text-o"></i></span>
-        <span>Documents</span>
-      </a>
-    </li>
-  </ul>
-</div>
-<div id="tab-content">
-  <p class="is-active" data-content="1">
-    Pictures
-  </p>
-  <p data-content="2">
-    Music
-  </p>
-  <p data-content="3">
-    Videos
-  </p>
-  <p data-content="4">
-    Documents
-  </p>
-</div>
-<div class="is-divider" data-content="OR"></div>
                 <article class="panel is-info">
   <p class="panel-heading">
     Info
@@ -122,9 +67,7 @@
     <a>Public</a>
     <a>Private</a>
     <a>Sources</a>
-    <a> <p data-content="4">
-    Documents
-  </p></a>
+    <a>Forks</a>
   </p>
   <div class="panel-block">
     <p class="control has-icons-left">
@@ -160,7 +103,6 @@
   </a>
 </article>
 </div>
-<div class="is-divider" data-content="OR"></div>
                     <div class="column is-10">
                     <section class="info-finances">
                     <h6 class="title is-6">Finance Overivew</h6>
@@ -288,19 +230,6 @@
             </div>
         </div>
     </div>
-    <script>
-        $(document).ready(function() {
-  $('#tabs li').on('click', function() {
-    var tab = $(this).data('tab');
-
-    $('#tabs li').removeClass('is-active');
-    $(this).addClass('is-active');
-
-    $('#tab-content p').removeClass('is-active');
-    $('p[data-content="' + tab + '"]').addClass('is-active');
-  });
-});
-</script>
     <script async type="text/javascript" src="../js/bulma.js"></script>
 </body>
 
