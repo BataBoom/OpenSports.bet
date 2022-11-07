@@ -1,0 +1,1000 @@
+ 1011  cd dashboard
+ 1012  cd ..
+ 1013  cd dashboard
+ 1014  cp nba.php nba4.php
+ 1015  mv nba4.php testNBA.php
+ 1016  nano test.php
+ 1017  php test.php
+ 1018  nano test.php
+ 1019  php test.php
+ 1020  nano test.php
+ 1021  php test.php
+ 1022  php testNBA.php
+ 1023  php nhlOdds.php
+ 1024  php preNHL.php
+ 1025  cd ..
+ 1026  cd junk
+ 1027  ls
+ 1028  mkdir logos
+ 1029  nano logos/nhl.php
+ 1030  ls
+ 1031  rm time.php
+ 1032  cd ..
+ 1033  nano logos/nba.php
+ 1034  nano junk/logos/nba.php
+ 1035  nano junk/logos/nfl.php
+ 1036  nano junk/logos/ncaa.php
+ 1037  ls junk/logos
+ 1038  cd dashboard.php
+ 1039  mv nhl.php nhl_alt.php
+ 1040  cd dashboard
+ 1041  mv nhl.php nhl_alt.php
+ 1042  mv testNHL.php nhl.php
+ 1043  php cb.php
+ 1044  cd ..
+ 1045  > test.json
+ 1046  cat test.json
+ 1047  cd dashboard
+ 1048  php cb.php
+ 1049  > ../test.json
+ 1050  cat ../test.json
+ 1051  nano ../test.json
+ 1052  ls
+ 1053  nano ../test.json
+ 1054  php cb.php
+ 1055  cat ../test.json
+ 1056  > ../test.json
+ 1057  php cb.php
+ 1058  > ../test.json
+ 1059  php cb.php
+ 1060  nano cb.php
+ 1061  php cb.php
+ 1062  nano cb.php
+ 1063  php cb.php
+ 1064  cd /var/www/opensports/cashier/payments
+ 1065  php recieveLog.php
+ 1066  cd ..
+ 1067  cd login
+ 1068  nano verify.php
+ 1069  php verify.php
+ 1070  nano verify.php
+ 1071  php verify.php
+ 1072  rm verifiy.php
+ 1073  rm verify.php
+ 1074  nano verify.php
+ 1075  php verify.php
+ 1076  nano verify.php
+ 1077  rm verify.php
+ 1078  nano verify.php
+ 1079  php verify.php
+ 1080  nano verify.php
+ 1081  php verify.php
+ 1082  nano verify.php
+ 1083  php verify.php
+ 1084  nano verify.php
+ 1085  php verify.php
+ 1086  nano verifyT.php
+ 1087  php verifyT.php
+ 1088  nano verifyT.php
+ 1089  php verifyT.php
+ 1090  nano verifyT.php
+ 1091  php verifyT.php
+ 1092  nano verifyT.php
+ 1093  rm verifyT.php
+ 1094  nano verifyT.php
+ 1095  php verifyT.php
+ 1096  rm verifyT.php
+ 1097  nano verifyT.php
+ 1098  php verifyT.php
+ 1099  rm verifyT.php
+ 1100  php verifyT.php
+ 1101  nano verifyT.php
+ 1102  php verifyT.php
+ 1103  php verify.php
+ 1104  nano verify.php
+ 1105  php verify.php
+ 1106  nano verify.php
+ 1107  php verify.php
+ 1108  nano verify.php
+ 1109  php verify.php
+ 1110  nano OTP.php
+ 1111  php OTP.php
+ 1112  rm OTP.php
+ 1113  php OTP.php
+ 1114  nano OTP.php
+ 1115  php OTP.php
+ 1116  nano vOTP.php
+ 1117  php vOTP.php
+ 1118  rm vOTP.php
+ 1119  php vOTP.php
+ 1120  nano vOTP.php
+ 1121  php vOTP.php
+ 1122  rm vOTP.php
+ 1123  nano vOTP.php
+ 1124  php vOTP.php
+ 1125  nano vOTP.php
+ 1126  php vOTP.php
+ 1127  php OTP.php
+ 1128  nano vOTP.php
+ 1129  php vOTP.php
+ 1130  php OTP.php
+ 1131  nano OTP.php
+ 1132  php OTP.php
+ 1133  nano OTP.php
+ 1134  php OTP.php
+ 1135  nano vOTP.php
+ 1136  php vOTP.php
+ 1137  php OTP.php
+ 1138  nano vOTP.php
+ 1139  php OTP.php
+ 1140  nano vOTP.php
+ 1141  php vOTP.php
+ 1142  nano vOTP.php
+ 1143  php vOTP.php
+ 1144  nano vOTP.php
+ 1145  php vOTP.php
+ 1146  nano OTP.php
+ 1147  php OTP.php
+ 1148  nano vOTP.php
+ 1149  php vOTP.php
+ 1150  nano vOTP.php
+ 1151  nano OTP.php
+ 1152  nano vOTP.php
+ 1153  php vOTP.php
+ 1154  nano vOTP.php
+ 1155  php vOTP.php
+ 1156  nano vOTP.php
+ 1157  nano OTP.php
+ 1158  php OTP.php
+ 1159  nano OTP.php
+ 1160  nano vOTP.php
+ 1161  nano OTP.php
+ 1162  nano vOTP.php
+ 1163  php vOTP.php
+ 1164  nano vOTP.php
+ 1165  php vOTP.php
+ 1166  nano vOTP.php
+ 1167  php vOTP.php
+ 1168  nano vOTP.php
+ 1169  nano OTP.php
+ 1170  php OTP.php
+ 1171  nano vOTP.php
+ 1172  php vOTP.php
+ 1173  nano vOTP.php
+ 1174  php vOTP.php
+ 1175  nano vOTP.php
+ 1176  nano OTP.php
+ 1177  php OTP.php
+ 1178  nano vOTP.php
+ 1179  nano OTP.php
+ 1180  php vOTP.php
+ 1181  nano verify.php
+ 1182  php verify.php
+ 1183  nano -c verify.php
+ 1184  php verify.php
+ 1185  nano -c verify.php
+ 1186  php verify.php
+ 1187  nano -c verifyT.php
+ 1188  php verifyT.php
+ 1189  nano -c verifyT.php
+ 1190  php verifyT.php
+ 1191  nano -c verifyT.php
+ 1192  php verifyT.php
+ 1193  nano -c verifyT.php
+ 1194  php verifyT.php
+ 1195  nano -c verifyT.php
+ 1196  ls
+ 1197  nano -c verify.php
+ 1198  php verify.php
+ 1199  cd ..
+ 1200  cd dashboard
+ 1201  nano read2.php
+ 1202  cd ..
+ 1203  cd includes/crons
+ 1204  nano read2.php
+ 1205  php read2.php
+ 1206  ls
+ 1207  nano database.php
+ 1208  cd ..
+ 1209  cd login
+ 1210  ls
+ 1211  nano OTP.php
+ 1212  php OTP.php
+ 1213  nano vOTP.php
+ 1214  nano verify.php
+ 1215  php verify.php
+ 1216  cd ..
+ 1217  cd includes/crons
+ 1218  nano list.php
+ 1219  php list.php
+ 1220  nano list.php
+ 1221  php list.php
+ 1222  cd /var/www/opensports
+ 1223  ls
+ 1224  cd admin
+ 1225  git clone https://github.com/coreui/coreui-free-bootstrap-admin-template.git my-project
+ 1226  ls
+ 1227  cd my-project
+ 1228  ls
+ 1229  cd ..
+ 1230  cd my-project
+ 1231  npm install
+ 1232  npm install -g npm@8.4.0
+ 1233  sudonpm install -g npm@8.4.0
+ 1234  sudo npm install -g npm@8.4.0
+ 1235  ls
+ 1236  sudo npm install
+ 1237  npm audit fix --force
+ 1238  ls
+ 1239  cd src
+ 1240  ls
+ 1241  cd views
+ 1242  ls
+ 1243  npm run build
+ 1244  npm start
+ 1245  npm build
+ 1246  ls
+ 1247  nano login.html
+ 1248  cd ..
+ 1249  ls
+ 1250  cd ..
+ 1251  ls
+ 1252  git clone https://github.com/ColorlibHQ/AdminLTE.git
+ 1253  ls
+ 1254  cd AdminLTE
+ 1255  ls
+ 1256  cd pages
+ 1257  ls
+ 1258  cd ..
+ 1259  ls
+ 1260  rm my-project
+ 1261  rm -r my-project
+ 1262  ls
+ 1263  mv AdminLTE/*/var/www/opensports/admin
+ 1264  mv -r AdminLTE/*/var/www/opensports/admin
+ 1265  ls
+ 1266  mv -r AdminLTE/* /var/www/opensports/admin
+ 1267  mv -r /AdminLTE/* /var/www/opensports/admin
+ 1268  mv  AdminLTE/* /var/www/opensports/admin
+ 1269  ls
+ 1270  cd ..
+ 1271  ls
+ 1272  cd includes/crons
+ 1273  ls
+ 1274  cd ..
+ 1275  cd login
+ 1276  ls
+ 1277  php verify.php
+ 1278  nano verify.php
+ 1279  php verify.php
+ 1280  nano verify.php
+ 1281  nano verifyT.php
+ 1282  php verifyT.php
+ 1283  nano verifyT.php
+ 1284  php verifyT.php
+ 1285  nano verifyT.php
+ 1286  php verifyT.php
+ 1287  nano verifyT.php
+ 1288  php verifyT.php
+ 1289  nano verifyT.php
+ 1290  nano OTP.php
+ 1291  php OTP.php
+ 1292  nano verifyT.php
+ 1293  php verifyT.php
+ 1294  nano verifyT.php
+ 1295  nano verify.php
+ 1296  cd ..
+ 1297  cd includes/crons
+ 1298  php updatewinners.php
+ 1299  nano read2.php
+ 1300  php read2.php
+ 1301  nano read2.php
+ 1302  php read2.php
+ 1303  php updatewinners.php
+ 1304  nano read2.php
+ 1305  php read2.php
+ 1306  cd ..
+ 1307  cd dashboard
+ 1308  ls
+ 1309  nano read.php
+ 1310  php read.php
+ 1311  nano read.php
+ 1312  nano read2.php
+ 1313  cd ..
+ 1314  cp includes/crons/read2.php /var/www/opensports/dashboard
+ 1315  cd dashboard
+ 1316  nano read2.php
+ 1317  php read2.php
+ 1318  nano read2.php
+ 1319  php read2.php
+ 1320  nano read2.php
+ 1321  php read2.php
+ 1322  nano -c read2.php
+ 1323  php read2.php
+ 1324  nano -c read2.php
+ 1325  php read2.php
+ 1326  nano -c read2.php
+ 1327  php read2.php
+ 1328  nano -c read2.php
+ 1329  php read2.php
+ 1330  nano -c read2.php
+ 1331  php read2.php
+ 1332  nano -c read2.php
+ 1333  php read2.php
+ 1334  nano -c read2.php
+ 1335  php read2.php
+ 1336  nano -c read2.php
+ 1337  php read2.php
+ 1338  nano -c read2.php
+ 1339  php read2.php
+ 1340  nano -c read2.php
+ 1341  php read2.php
+ 1342  nano -c read2.php
+ 1343  php read2.php
+ 1344  nano -c read2.php
+ 1345  php read2.php
+ 1346  nano -c read2.php
+ 1347  php read2.php
+ 1348  nano -c read2.php
+ 1349  php read2.php
+ 1350  nano -c read2.php
+ 1351  php read2.php
+ 1352  nano -c read2.php
+ 1353  php read2.php
+ 1354  nano -c read2.php
+ 1355  php read2.php
+ 1356  nano -c read2.php
+ 1357  php read2.php
+ 1358  nano -c read2.php
+ 1359  php read2.php
+ 1360  nano -c read2.php
+ 1361  php read2.php
+ 1362  nano -c read2.php
+ 1363  php read2.php
+ 1364  nano -c read2.php
+ 1365  php read2.php
+ 1366  nano -c read2.php
+ 1367  php read2.php
+ 1368  nano -c read2.php
+ 1369  php read2.php
+ 1370  nano -c read2.php
+ 1371  php read2.php
+ 1372  nano -c read2.php
+ 1373  php read2.php
+ 1374  nano -c read2.php
+ 1375  php read2.php
+ 1376  nano -c read2.php
+ 1377  php read2.php
+ 1378  nano -c read2.php
+ 1379  php read2.php
+ 1380  nano -c read2.php
+ 1381  php read2.php
+ 1382  nano -c read2.php
+ 1383  php read2.php
+ 1384  nano -c read2.php
+ 1385  php read2.php
+ 1386  nano -c read2.php
+ 1387  php read2.php
+ 1388  nano -c read2.php
+ 1389  php read2.php
+ 1390  nano -c read2.php
+ 1391  php testNBA.php
+ 1392  cp testNBA.php nba.php
+ 1393  cd ..
+ 1394  cd includes/crons
+ 1395  nano read2.php
+ 1396  php read2.php
+ 1397  nano read2.php
+ 1398  php read2.php
+ 1399  nano read2.php
+ 1400  php read2.php
+ 1401  nano read2.php
+ 1402  cd ..
+ 1403  cd dashboard
+ 1404  php ui.php
+ 1405  cd ..
+ 1406  cd admin
+ 1407  ls
+ 1408  cd ..
+ 1409  rm -r admin/*
+ 1410  ls admin
+ 1411  cd admin
+ 1412  git clone git@github.com:pure-css/pure.git
+ 1413  ls
+ 1414  ls -a
+ 1415  locate composer.json
+ 1416  locate composer.json |grep opensports
+ 1417  cd ..
+ 1418  cd libs/vendor
+ 1419  ls
+ 1420  cd composer
+ 1421  ls
+ 1422  cd ..
+ 1423  ls
+ 1424  composer require pure-css/purecss
+ 1425  ls
+ 1426  composer update
+ 1427  ls
+ 1428  ls composer
+ 1429  ls vendor
+ 1430  ls vendor/composer
+ 1431  cd ..
+ 1432  ls
+ 1433  composer require pure-css/purecss
+ 1434  composer require yahoo/purecss
+ 1435  ls
+ 1436  ls vendor
+ 1437  nano composer.json
+ 1438  ls php-curl-class
+ 1439  ls
+ 1440  ls vendor
+ 1441  ls vendor/php-curl-class
+ 1442  ls
+ 1443  rm composer.json
+ 1444  rm composer.lock
+ 1445  ls
+ 1446  cd vendor
+ 1447  ls
+ 1448  nano composer.json
+ 1449  ls
+ 1450  nano composer.json
+ 1451  fg
+ 1452  ls
+ 1453  ls composer
+ 1454  ls yahoo
+ 1455  ls yahoo/purecss
+ 1456  rm -r yahoo 
+ 1457  ls
+ 1458  nano composer.json
+ 1459  composer update
+ 1460  ls
+ 1461  cd ..
+ 1462  cd includes/crons
+ 1463  ls
+ 1464  nano read2.php
+ 1465  php read2.php
+ 1466  cd ..
+ 1467  cd libs
+ 1468  l;s
+ 1469  ls
+ 1470  cd vendor
+ 1471  ls
+ 1472  cd vendor/composer
+ 1473  ls
+ 1474  cd ..
+ 1475  ls
+ 1476  cd ..
+ 1477  ls
+ 1478  nano composer.json
+ 1479  cp composer.json /var/www/opensports/libs
+ 1480  cd ..
+ 1481  ls
+ 1482  rm -r vendor
+ 1483  ls
+ 1484  composer require composer.json
+ 1485  composer update
+ 1486  ls
+ 1487  ls vendor
+ 1488  nano vendor/autoload.php
+ 1489  nano composer/autoload_real.php
+ 1490  ls vendor/composer
+ 1491  nano composer/autoload_real.php
+ 1492  nano vendor/composer/autoload_real.php
+ 1493  ls
+ 1494  ls vendor
+ 1495  cd ..
+ 1496  cd includes/crons
+ 1497  php read2.php
+ 1498  nano read2.php
+ 1499  php read2.php
+ 1500  nano read2.php
+ 1501  php read2.php
+ 1502  php apiNBA.php
+ 1503  php nbaGrader.php
+ 1504  php read2.php
+ 1505  nano read2.php
+ 1506  php read2.php
+ 1507  cd ..
+ 1508  cd admin
+ 1509  nano index.php
+ 1510  cd ..
+ 1511  cd includes/crons
+ 1512  php nbaGrader.php
+ 1513  cd /var/www/opensports/admin
+ 1514  ls
+ 1515  nano index.html
+ 1516  nano styles.css
+ 1517  nano index.html
+ 1518  rm index.*
+ 1519  nano index.html
+ 1520  git clone git@github.com:getbase/starter.git
+ 1521  ls
+ 1522  unzip Foundation-Sites-CSS.zip
+ 1523  ls
+ 1524  cd ..
+ 1525  cd includes/crons
+ 1526  ls
+ 1527  nano read2.php
+ 1528  php read2.php
+ 1529  nano read2.php
+ 1530  cd ..
+ 1531  cd crons
+ 1532  php read2.php
+ 1533  nano read2.php
+ 1534  php read2.php
+ 1535  cd ..
+ 1536  cd dashboard
+ 1537  php nba.php
+ 1538  cd ..
+ 1539  cd includes/crons
+ 1540  ls
+ 1541  nano read2.php
+ 1542  nano read.php
+ 1543  nano database.php
+ 1544  php database.php
+ 1545  nano database.php
+ 1546  php database.php
+ 1547  ls
+ 1548  cd ..
+ 1549  cd dashboard
+ 1550  ls
+ 1551  nano read.php
+ 1552  cd ..
+ 1553  cd cashier
+ 1554  ls
+ 1555  cd payments
+ 1556  ls
+ 1557  cd ..
+ 1558  ls
+ 1559  cd ..
+ 1560  ls
+ 1561  cd dashbaord
+ 1562  cd dashboard
+ 1563  ls
+ 1564  nano ui.php
+ 1565  nano read2.phgp
+ 1566  nano read2.php
+ 1567  php read2.php
+ 1568  nano read2.php
+ 1569  php read2.php
+ 1570  nano read2.php
+ 1571  php read2.php
+ 1572  nano read2.php
+ 1573  php read2.php
+ 1574  cd /var/www/opensports]
+ 1575  cd /var/www/opensports
+ 1576  cd admin
+ 1577  composer require pure-css/purecss
+ 1578  ls
+ 1579  rm composer.json
+ 1580  npm install purecss --save
+ 1581  ls
+ 1582  ls css
+ 1583  ls node_modules
+ 1584  ls node_modules/purecss
+ 1585  ls node_modules/purecss/build
+ 1586  rm index.html
+ 1587  nano index.html
+ 1588  rm index.html
+ 1589  nano index.html
+ 1590  ls
+ 1591  ls css
+ 1592  nano css/styles.css
+ 1593  nano index.html
+ 1594  nano css/side_menu.css
+ 1595  nano side.html
+ 1596  nano css/side_menu.css
+ 1597  nano side.html
+ 1598  cd /var/www/opensports/admin
+ 1599  ls
+ 1600  cp sideonly.html sideonly.php
+ 1601  cp index.html index.php
+ 1602  cd ..
+ 1603  cd dashboard
+ 1604  php nbaOdds22.php
+ 1605  cd ..
+ 1606  cd includes
+ 1607  cd opensports
+ 1608  cd includes/crons
+ 1609  nano read2.php
+ 1610  php read2.php
+ 1611  nano read2.php
+ 1612  php read2.php
+ 1613  nano read2.php
+ 1614  php read2.php
+ 1615  nano read2.php
+ 1616  php read2.php
+ 1617  nano read2.php
+ 1618  php read2.php
+ 1619  nano read2.php
+ 1620  php read2.php
+ 1621  nano read2.php
+ 1622  php read2.php
+ 1623  nano read2.php
+ 1624  php read2.php
+ 1625  nano read2.php
+ 1626  php read2.php
+ 1627  nano read2.php
+ 1628  php read2.php
+ 1629  nano read2.php
+ 1630  php read2.php
+ 1631  php MLgrader.php
+ 1632  php read2.php
+ 1633  php MLgrader.php
+ 1634  php read2.php
+ 1635  php MLgrader.php
+ 1636  php read2.php
+ 1637  php MLgrader.php
+ 1638  php read2.php
+ 1639  php MLgrader.php
+ 1640  php read2.php
+ 1641  php MLgrader.php
+ 1642  nano read2.php
+ 1643  php read2.php
+ 1644  php MLgrader.php
+ 1645  nano read2.php
+ 1646  php read2.php
+ 1647  php MLgrader.php
+ 1648  cd /var/www/opensports/includes/crons
+ 1649  php MLgrader.php
+ 1650  nano read2.php
+ 1651  php read2.php
+ 1652  php MLgrader.php
+ 1653  nano read2.pph
+ 1654  nano read2.php
+ 1655  php read2.php
+ 1656  nano read2.php
+ 1657  php read2.php
+ 1658  nano read2.php
+ 1659  php read2.php
+ 1660  nano read2.php
+ 1661  php read2.php
+ 1662  nano read2.php
+ 1663  php read2.php
+ 1664  nano read2.php
+ 1665  php read2.php
+ 1666  nano read2.php
+ 1667  php read2.php
+ 1668  cd
+ 1669  cd /var/www/opensports/admin
+ 1670  mkdir bulma
+ 1671  cd bulma
+ 1672  git clone https://github.com/jgthms/bulma.git
+ 1673  ls
+ 1674  mv -r bulma/* /var/www/opensports/admin/bulma
+ 1675  mv bulma/* /var/www/opensports/admin/bulma
+ 1676  ls
+ 1677  rm bulma
+ 1678  rm -r bulma
+ 1679  ls
+ 1680  cd ..
+ 1681  nano bulma.html
+ 1682  cp /var/www/opensports/dashboard/ui.php /var/www/opensports/admin/
+ 1683  ls
+ 1684  cd bulma
+ 1685  ls
+ 1686  npm init
+ 1687  ls
+ 1688  cd sass
+ 1689  ls
+ 1690  cd elemenets
+ 1691  cd elements
+ 1692  ls
+ 1693  nano table.sass
+ 1694  cd ..
+ 1695  ls
+ 1696  nano package.json
+ 1697  ls
+ 1698  ls css
+ 1699  nano css/mystles.css
+ 1700  nano css/mystles.scss
+ 1701  nano newpack.json
+ 1702  rm css/mystles.css
+ 1703  ls
+ 1704  nano sass/mystyles.css
+ 1705  npm run css-build
+ 1706  nano package.json
+ 1707  npm run css-build
+ 1708  ls css
+ 1709  rm css/mystyles.css
+ 1710  rm css/mystles.css
+ 1711  rm css/mystles.scss
+ 1712  nano package.json
+ 1713  npm run css-build
+ 1714  npm install && npm start 
+ 1715  ls css
+ 1716  npm run css-build
+ 1717  ls css
+ 1718  nano package.json
+ 1719  npm run css-build /var/www/opensports/admin/bulma
+ 1720  ls css
+ 1721  ls scss
+ 1722  ls
+ 1723  ls sass
+ 1724  nano package.json
+ 1725  ls sass
+ 1726  nano package.json
+ 1727  mv sass/mystyles.css sass/mystyles.scss
+ 1728  ls sass
+ 1729  nano sass/mystyles.scss
+ 1730  npm run css-build
+ 1731  cd sass
+ 1732  npm run css-build
+ 1733  ls
+ 1734  mkdir css
+ 1735  npm run css-build
+ 1736  ls
+ 1737  rm mystyles.scc
+ 1738  rm mystyles.sccs
+ 1739  rm mystyles.scss
+ 1740  nano mystyles.scss
+ 1741  npm run css-build
+ 1742  cd ..
+ 1743  npm run css-build
+ 1744  nano package.json
+ 1745  npm run css-build
+ 1746  ls
+ 1747  nano sass/mystyles.scss
+ 1748  ls sass
+ 1749  ls sass/base
+ 1750  locate bulma.sass
+ 1751  cd node_modules
+ 1752  ls
+ 1753  cd bulma
+ 1754  cd ..
+ 1755  ls
+ 1756  nano sass/mystyles.scss
+ 1757  npm run css-build
+ 1758  ls
+ 1759  nano test.html
+ 1760  nano sass/mystyles.scss
+ 1761  npm start
+ 1762  nano sass/mystyles.scss
+ 1763  npm run css-build
+ 1764  ls
+ 1765  locate _all.sass
+ 1766  locate _all.sass.
+ 1767  find /_all.sass
+ 1768  find _all.sass
+ 1769  nano sass/mystyles.scss
+ 1770  rm sass/mystyles.scss
+ 1771  nano sass/mystyles.scss
+ 1772  npm run css-build
+ 1773  nano sass/mystyles.scss
+ 1774  npm run css-build
+ 1775  rm sass/mystyles.scss
+ 1776  nano sass/mystyles.scss
+ 1777  npm run css-build
+ 1778  nano packages.json
+ 1779  nano package.json
+ 1780  nano sass/table.scss
+ 1781  npm run css-build
+ 1782  nano sass/table.scss
+ 1783  npm run css-build
+ 1784  nano sass/table.scss
+ 1785  rm sass/table.scss
+ 1786  nano sass/table.scss
+ 1787  npm run css-build
+ 1788  rm sass/table.scss
+ 1789  nano sass/table.scss
+ 1790  npm run css-build
+ 1791  rm sass/table.scss
+ 1792  nano sass/table.scss
+ 1793  npm run css-build
+ 1794  rm sass/table.scss
+ 1795  nano sass/table.scss
+ 1796  npm run css-build
+ 1797  rm sass/table.scss
+ 1798  npm run css-build
+ 1799  nano sass/table.scss
+ 1800  npm run css-build
+ 1801  rm sass/table.scss
+ 1802  nano sass/table.scss
+ 1803  npm run css-build
+ 1804  rm sass/table.scss
+ 1805  nano sass/table.scss
+ 1806  npm run css-build
+ 1807  rm sass/table.scss
+ 1808  nano sass/table.scss
+ 1809  npm run css-build
+ 1810  rm sass/table.scss
+ 1811  nano sass/table.scss
+ 1812  npm run css-build
+ 1813  rm sass/table.scss
+ 1814  nano sass/table.scss
+ 1815  npm run css-build
+ 1816  rm sass/table.scss
+ 1817  nano sass/table.scss
+ 1818  npm run css-build
+ 1819  rm sass/table.scss
+ 1820  nano sass/table.scss
+ 1821  npm run css-build
+ 1822  rm sass/table.scss
+ 1823  nano sass/table.scss
+ 1824  npm run css-build
+ 1825  rm sass/table.scss
+ 1826  nano sass/table.scss
+ 1827  npm run css-build
+ 1828  rm sass/table.scss
+ 1829  nano sass/table.scss
+ 1830  npm run css-build
+ 1831  rm sass/table.scss
+ 1832  nano sass/table.scss
+ 1833  npm run css-build
+ 1834  cd ..
+ 1835  cp /var/www/opensports/admin/ui.php /var/www/opensports/dashboard/ui2.php
+ 1836  nano test.html
+ 1837  cp /var/www/opensports/admin/ui.php /var/www/opensports/dashboard/ui2.php
+ 1838  nano test.html
+ 1839  rm test.html
+ 1840  nano admin.html
+ 1841  nano css/admin.css
+ 1842  cd includes
+ 1843  nano admin_config.php
+ 1844  cd ..
+ 1845  cp admin2.html includes/sidenav.php
+ 1846  cp admin2.php includes/sidenav.php
+ 1847  cp index.php more.php
+ 1848  cd ..
+ 1849  cd includes
+ 1850  cd crons
+ 1851  nano read2.php
+ 1852  php read2.php
+ 1853  cp read2.php admin.php
+ 1854  nano admin.php
+ 1855  php admin.php
+ 1856  cp more.php allbets.php
+ 1857  cd ..
+ 1858  cd admin
+ 1859  cp more.php allbets.php
+ 1860  cp more.php index.php
+ 1861  cd ..
+ 1862  cd includes/crons
+ 1863  nano admin.php
+ 1864  php admin.php
+ 1865  nano admin.php
+ 1866  php admin.php
+ 1867  cd ..
+ 1868  php admin/allbets.php
+ 1869  nano test.html
+ 1870  nano welcome.php
+ 1871  nano test.html
+ 1872  nano welcome.php
+ 1873  nano test.html
+ 1874  rm test.html
+ 1875  rm welcome.php
+ 1876  cd admin
+ 1877  nano forms/u.php
+ 1878  cd ..
+ 1879  cd includes/crons
+ 1880  nano read2.php
+ 1881  nano admin.php
+ 1882  nano read2.php
+ 1883  ls
+ 1884  nano read.php
+ 1885  php read.php
+ 1886  ls
+ 1887  nano read.php
+ 1888  ls
+ 1889  php read.php
+ 1890  cd ..
+ 1891  cd admin
+ 1892  cp allbets.php pendingbets.php
+ 1893  mv pendingbets.php gradedbets.php
+ 1894  cd ..
+ 1895  zip -r opensports.zip opensports
+ 1896  sudo zip -r opensports.zip opensports
+ 1897  chmod 777 opensports.zip
+ 1898  sudo chmod 777 opensports.zip
+ 1899  stat opensports.zipo
+ 1900  stat opensports.zip
+ 1901  ls -l --block-size=GB
+ 1902  cp opensports.zip opensports
+ 1903  chmod 600 opensports.zip
+ 1904  sudo chmod 600 opensports.zip
+ 1905  cd opensports/includes/crons
+ 1906  nano reado.php
+ 1907  nano read.php
+ 1908  php read.php
+ 1909  cd ..
+ 1910  cd admin
+ 1911  cp index.php admin.php
+ 1912  cp allbets.php users.php
+ 1913  cp edit_bet.php edit_user.pph
+ 1914  cp edit_bet.php edit_user.php
+ 1915  php edit_user.php
+ 1916  cp forms/updateBet.php forms/updateUser.php
+ 1917  nano forms/test.php
+ 1918  php forms/test.php
+ 1919  nano forms/test.php
+ 1920  php forms/test.php
+ 1921  nano forms/test.php
+ 1922  php forms/test.php
+ 1923  nano forms/test.php
+ 1924  cp users.php add_user.php
+ 1925  cp users.php adminUsers.php
+ 1926  cp allbets.php match_results.php
+ 1927  cp allbets.php add_result.php
+ 1928  cp allbets.php custom_bet.php
+ 1929  cp allbets.php payments.php
+ 1930  cp allbets.php control_center.php
+ 1931  cp allbets.php logs.php
+ 1932  cp allbets.php settings.php
+ 1933  nano ../includes/crons/read2.php
+ 1934  php ../includes/crons/read2.php
+ 1935  cp edit_user.php edit_match.php
+ 1936  nano ../includes/crons/read2.php
+ 1937  nano ../includes/crons/read.php
+ 1938  php edit_match2.php
+ 1939  cp forms/updateBet.php forms/updateScore.php
+ 1940  nano ../includes/crons/read.php
+ 1941  php ../includes/crons/read.php
+ 1942  cp edit_match.php custom_bet.php
+ 1943  cp forms/updateBet.php forms/createBet.php
+ 1944  cp add_result.php add_customresult.php
+ 1945  cp edit_bet.php edit_custombet.php
+ 1946  cp forms/updateBet.php forms/updateCustomBet.php
+ 1947  cp forms/updateBet.php forms/updateBetslip.php
+ 1948  nano ../includes/crons/read.php
+ 1949  php ../includes/crons/read.php
+ 1950  nano ../includes/crons/read.php
+ 1951  php ../includes/crons/read.php
+ 1952  locate opensports |grep nginx
+ 1953  sudo nano
+ 1954  sudo nano /etc/nginx/sites-available/opensports.bet
+ 1955  sudo nginx -t
+ 1956  sudo service nginx reload
+ 1957  sudo nano /etc/nginx/sites-available/opensports.bet
+ 1958  sudo service nginx reload
+ 1959  sudo nano /etc/nginx/sites-available/opensports.bet
+ 1960  sudo service nginx reload
+ 1961  sudo nano /etc/nginx/sites-available/opensports.bet
+ 1962  sudo service nginx reload
+ 1963  sudo nano /etc/nginx/sites-available/opensports.bet
+ 1964  sudo service nginx reload
+ 1965  sudo nano /etc/nginx/sites-available/opensports.bet
+ 1966  sudo service nginx reload
+ 1967  sudo nano /etc/nginx/sites-available/opensports.bet
+ 1968  sudo service nginx reload
+ 1969  sudo nano /etc/nginx/sites-available/opensports.bet
+ 1970  sudo service nginx reload
+ 1971  sudo nano /etc/nginx/sites-available/opensports.bet
+ 1972  sudo service nginx reload
+ 1973  sudo nano /etc/nginx/sites-available/opensports.bet
+ 1974  sudo service nginx reload
+ 1975  sudo service nginx restart
+ 1976  sudo nano /etc/nginx/sites-available/opensports.bet
+ 1977  sudo nano /etc/nginx/sites-available/nobuff.zone
+ 1978  sudo nano /etc/nginx/sites-available/opensports.bet
+ 1979  sudo service nginx restart
+ 1980  cd /var/www/opensports/
+ 1981  cd includes/config
+ 1982  ls
+ 1983  cp sessions.php admin_sessions.php
+ 1984  cd ..
+ 1985  cd crons
+ 1986  nano read2.php
+ 1987  php read2.php
+ 1988  nano read2.php
+ 1989  php read2.php
+ 1990  nano read2.php
+ 1991  php read2.php
+ 1992  php nbaGrader.php
+ 1993  php read2.php
+ 1994  cd ..
+ 1995  cd admin
+ 1996  nano sesh.php
+ 1997  cd ..
+ 1998  cd includes/crons
+ 1999  php nbaGrader.php
+ 2000  cd /var/www/opensports/admin/bulma
+ 2001  ls
+ 2002  nano packages.json
+ 2003  nano package.json
+ 2004  npm run css-build
+ 2005  ls
+ 2006  npm run css-build css/hero.css
+ 2007  npm run css-build sass/hero.scss css/hero.css
+ 2008  npm run build-script
+ 2009  npm run build
+ 2010  history > history.txt
